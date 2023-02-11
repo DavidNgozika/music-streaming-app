@@ -1,5 +1,8 @@
 
 import { useState } from "react";
+import TodoInput from "./components/Todos/TodoInput/TodoInput";
+import TodoList from "./components/Todos/TodoList/TodoList";
+import styles from './App.module.css';
 
 export default function App() {
     const [todos, setTodos] = useState([
@@ -7,18 +10,18 @@ export default function App() {
         { id: 't2', todos: 'Master React', },
     ]);
 
-    const addTodo = enteredTask => {
+    const addTodoHandler = enteredTask => {
         setTodos(prevTodos => {
             const updatedTodos = [...prevTodos];
             updatedTodos.unshift({
                 id: Math.random().toString(),
                 todos: enteredTask,
-            })
+            });
             return updatedTodos;
         });
     };
 
-    const removeTodo = todoId => {
+    const removeTodoHandler = todoId => {
         setTodos(prevTodos => {
             const updatedTodos = prevTodos.filter(todo => todo.id !== todoId);
             return updatedTodos;
@@ -29,10 +32,22 @@ export default function App() {
         <p style={{ textAlign: "center" }}>Todo list empty</p>
     );
 
+    if (todos.length > 0) {
+        displayedContent = (
+            <TodoList 
+                todos={todos} onDeleteTodo={removeTodoHandler}
+            />
+        );
+    }
+
     return (
         <div>
-            <section>
+            <section className={styles.todoForm}>
+                <TodoInput onAddTodo={addTodoHandler} />
+            </section>
 
+            <section className={styles.todos}>
+                {displayedContent}
             </section>
         </div>
     );
