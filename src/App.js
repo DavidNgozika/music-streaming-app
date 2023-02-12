@@ -39,6 +39,13 @@ export default function App() {
 
     return (
         <div>
+            <h2 style={{ 
+                textAlign: 'center', 
+                color: 'white',
+                marginBottom: '0'
+            }}>
+                MY TODO LIST APP
+            </h2>
             <section className={styles.todoForm}>
                 <TodoInput onAddTodo={addTodoHandler} />
             </section>

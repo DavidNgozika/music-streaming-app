@@ -23,7 +23,7 @@ export default function TodoInput(props) {
     return (
         <form onSubmit={formSubmitHandler} className={styles.form}>
             <div className={styles.formControl}>
-                <label>Todos</label>
+                <label>Start typing to add Todos:</label>
                 <input type="text" onChange={todoChangeHandler} />
             </div>
             <AddButton type="submit">Add Todo</AddButton>
