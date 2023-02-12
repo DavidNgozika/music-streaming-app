@@ -22,7 +22,13 @@ body {
 
 @media screen and (min-width: 768px) {
     .todoForm {
-        max-width: 70%;
+        max-width: 65%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .todoForm {
+        max-width: 45%;
     }
 }
 
