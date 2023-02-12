@@ -1,4 +1,5 @@
 
+import DeleteButton from '../../UI/Button/DeleteButton';
 import styles from './TodoItem.module.css';
 
 export default function TodoItem(props) {
@@ -7,8 +8,9 @@ export default function TodoItem(props) {
     };
 
     return (
-        <li className={styles.todo} onClick={deleteHandler}>
+        <li className={styles.todo}>
             {props.children}
+            <DeleteButton onDelete={deleteHandler}></DeleteButton>
         </li>
     );
 }

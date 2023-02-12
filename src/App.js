@@ -5,10 +5,7 @@ import TodoList from "./components/Todos/TodoList/TodoList";
 import styles from './App.module.css';
 
 export default function App() {
-    const [todos, setTodos] = useState([
-        { id: 't1', todos: 'Learn React', },
-        { id: 't2', todos: 'Master React', },
-    ]);
+    const [todos, setTodos] = useState([]);
 
     const addTodoHandler = enteredTask => {
         setTodos(prevTodos => {
@@ -29,7 +26,7 @@ export default function App() {
     };
 
     let displayedContent = (
-        <p style={{ textAlign: "center" }}>Todo list empty</p>
+        <p style={{ textAlign: "center", color: 'white' }}>Todo list empty</p>
     );
 
     if (todos.length > 0) {

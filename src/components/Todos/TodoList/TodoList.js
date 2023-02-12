@@ -11,7 +11,7 @@ export default function TodoList(props) {
                     id={todo.id}
                     onDelete={props.onDeleteTodo}
                 >
-                    {todo.text}
+                    {todo.todos}
                 </TodoItem>
             ))}
         </ul>
