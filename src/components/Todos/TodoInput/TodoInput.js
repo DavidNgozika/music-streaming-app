@@ -15,13 +15,18 @@ export default function TodoInput(props) {
             return;
         }
         props.onAddTodo(value);
+        setValue('');
     };
 
     return (
         <form onSubmit={formSubmitHandler} className={styles.form}>
             <div className={styles.formControl}>
                 <label>Start typing to add Todos:</label>
-                <input type="text" onChange={todoChangeHandler} />
+                <input 
+                    type="text" 
+                    onChange={todoChangeHandler} 
+                    value={value}
+                />
             </div>
             <AddButton type="submit">Add Todo</AddButton>
         </form>
