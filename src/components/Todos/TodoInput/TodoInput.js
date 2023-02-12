@@ -4,7 +4,6 @@ import AddButton from '../../UI/Button/AddButton';
 
 export default function TodoInput(props) {
     const [value, setValue] = useState('');
-    const [isInputValid, setIsInputValid] = useState(true);
 
     const todoChangeHandler = e => {
         setValue(e.target.value);
@@ -13,11 +12,9 @@ export default function TodoInput(props) {
     const formSubmitHandler = e => {
         e.preventDefault();
         if (value.trim().length === 0) {
-            setIsInputValid(false);
             return;
         }
         props.onAddTodo(value);
-        setValue('');
     };
 
     return (
