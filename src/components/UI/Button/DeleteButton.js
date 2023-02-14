@@ -7,7 +7,7 @@ export default function DeleteButton(props) {
             className={styles.button} 
             onClick={props.onDelete}
         >
-            Delete Todo
+            Delete item
         </button>
     );
 }

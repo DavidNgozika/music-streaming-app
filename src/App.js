@@ -26,7 +26,7 @@ export default function App() {
     };
 
     let displayedContent = (
-        <p style={{ textAlign: "center", color: 'white' }}>Todo list empty</p>
+        <p style={{ textAlign: "center", color: 'white' }}>To-do list empty</p>
     );
 
     if (todos.length > 0) {
@@ -42,9 +42,10 @@ export default function App() {
             <h2 style={{ 
                 textAlign: 'center', 
                 color: 'white',
-                marginBottom: '0'
+                marginBottom: '0',
+                fontFamily: 'segoe print'
             }}>
-                MY TODO LIST APP
+                MY TO-DO LIST APP
             </h2>
             <section className={styles.todoForm}>
                 <TodoInput onAddTodo={addTodoHandler} />
