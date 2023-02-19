@@ -7,9 +7,7 @@ export default function App() {
     return (
         <div className={styles.container}>
             <Navbar />
-            <Interns
-                
-            />
+            <Interns />
         </div>
     );
 }

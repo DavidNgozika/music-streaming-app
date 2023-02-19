@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 
 export default function Button() {
     return (
-        <button className={styles.container}>
+        <button className={styles.button}>
             View Profile
         </button>
     );

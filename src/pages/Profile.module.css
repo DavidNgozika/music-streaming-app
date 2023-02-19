@@ -24,6 +24,10 @@
     margin-bottom: 2rem;
 }
 
+.header {
+    margin: 1rem;
+}
+
 .categories button {
     display: flex;
     flex-direction: column;
@@ -35,9 +39,10 @@
     border-radius: 5px;
     color: white;
     background-color: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
 }
 
 .categories button:focus,
 .categories button:active {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 }

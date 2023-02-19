@@ -1,8 +1,17 @@
-.container {
-    background-color: transparent;
+.button {
+    background-color: white;
     border-radius: 5px;
     cursor: pointer;
-    color: whitesmoke;
+    color: #069;
     border: 1px solid whitesmoke;
     padding: 0.5rem;
+    font-weight: bold;
+}
+
+.button:hover {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+    box-shadow: 0px 0px;
 }
