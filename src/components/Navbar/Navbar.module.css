@@ -2,13 +2,9 @@
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #069;
-    border: 1px solid white;
-}
-
-.container div {
-    padding: 0.25rem 0.5rem;
+    padding: 1rem 0.8rem;
+    background-color: #034d;
+    color: #fff;
 }
 
 .path {
@@ -17,5 +13,10 @@
 
 .left {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0;
+    width: 30%;
 }
+
+
