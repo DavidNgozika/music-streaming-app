@@ -11,7 +11,8 @@ export default function Interns() {
                     id={item.id}
                     key={item.id}
                     profile={item.img}
-                    fullName={item.fullName}
+                    firstName={item.firstName}
+                    lastName={item.lastName}
                     path={item.path}
                 />
             ))}

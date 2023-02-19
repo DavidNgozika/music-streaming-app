@@ -3,7 +3,8 @@ import Button from '../UI/Button';
 import styles from './Intern.module.css';
 
 export default function Intern({
-    fullName,
+    firstName,
+    lastName,
     profile,
     path,
     id,
@@ -22,8 +23,9 @@ export default function Intern({
                     />
                 </div>
 
-                <div>
-                    <span>{fullName}</span>
+                <div className={styles.fullName}>
+                    <span>{firstName}</span>
+                    <span>{lastName}</span>
                 </div>
 
                 <div className={styles.path}>

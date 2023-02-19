@@ -19,3 +19,13 @@
     display: flex;
     align-items: center;
 }
+
+.fullName {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fullName span {
+    padding: 0.25rem;
+}
