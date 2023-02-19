@@ -1,2 +1,8 @@
-
-
+.container {
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 0.5rem;
+}
