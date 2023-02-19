@@ -1,6 +1,6 @@
 
 // import mI from '../Assets/images/Male.png';
-import fI from '../Assets/images/Female.png';
+import fI from '../components/Assets/images/Female.png';
 import styles from './Profile.module.css';
 
 export default function Profile() {
