@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #069;
+    border-bottom: 1px solid white;
+}
+
+.container div {
+    padding: 0.25rem 0.5rem;
+}
+
+.path {
+    display: none;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
