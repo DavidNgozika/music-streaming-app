@@ -1,8 +1,12 @@
+import { Component } from "react"
 
-export default function NoteList() {
-    return (
-        <ul>
+export default class NoteList extends Component {
+    render() {
+        return (
+            <ul>
 
-        </ul>
-    );
+            </ul>
+        );
+    }
 }
+

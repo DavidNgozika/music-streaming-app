@@ -5,5 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, purple, blue);
+    /* background-image: linear-gradient(to right, purple, blue); */
+    background-color: grey;
 }
+

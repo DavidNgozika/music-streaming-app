@@ -1,6 +1,9 @@
+import { Component } from "react"
 
-export default function NoteItem() {
-    return (
-        <li></li>
-    );
+export default class NoteItem extends Component {
+    render() {
+        return (
+            <li></li>
+        );
+    }
 }
