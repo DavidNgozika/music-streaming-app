@@ -4,6 +4,8 @@
 }
 
 .container {
+    color: white;
+    background-color: dodgerblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
