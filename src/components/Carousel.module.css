@@ -1,0 +1,14 @@
+.container {
+    width: 85%;
+    margin: 1.5rem auto 0;
+}
+
+.heading {
+    margin: 0.5rem 0;
+}
+
+.carouselItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.figure img {
+    height: 100px;
+    width: 40vw;
+    border-radius: 5px;
+}
+
+.figcaption {
+    margin: 0.5rem 0;
+}
